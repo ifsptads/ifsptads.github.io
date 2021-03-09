@@ -34,7 +34,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 claro" >
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -80,9 +80,9 @@
         </div>
         <div class="col-md-12 col-lg-10 content">
           <h1 class="page-title">Thiago Inocêncio</h1>
-          <div class="row" style="margin-bottom: 20px;">
+          <div class="row" style="margin-bottom: 70px;">
             <div class="col-md-12 col-lg-3 profile_container">
-              <img src="images/profile.jpg" width="200" height="200">
+              <img src="images/profile.jpg" width="200" height="200" id="minhafoto">
             </div>
             <div class="col-md-12 col-lg-9">
               <p id="about_text">
@@ -93,7 +93,13 @@
                 Federal do ABC (UFABC). Tem experiência na área de Ciência da Computação, com ênfase em análise e
                 desenvolvimento de sistemas, atuando principalmente nos seguintes temas: Engenharia de software,
                 Sistema-de-sistemas, internet das coisas, microserviços etc.</p>
-            </div>
+                
+                <section class="controles">
+                  <button id="acender">Modo claro</button>
+                  <button id="escuro">Modo escuro</button>
+              </section>
+
+              </div>
           </div>
 
           <div class="social_links">
@@ -159,6 +165,45 @@
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')</script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+        var template = window.localStorage.getItem("template");
+
+        if(template) {
+          $("body").removeClass("claro");
+          $("body").removeClass("escuro");
+          $("body").addClass(template + "semefeito");
+        }
+
+        // Jquery entra aqui
+        
+        $("#acender").click(function() {
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+            window.localStorage.setItem('template', 'claro');
+        });
+
+        $("#escuro").click(function() {
+            $("body").addClass("escuro");
+            $("body").removeClass("claro");
+            window.localStorage.setItem('template', 'escuro');
+        })
+
+        $("#minhafoto").mouseenter(function() {
+            $(this).addClass("foto_com_mouse");
+            $(this).removeClass("foto_sem_mouse");
+        });
+
+        $("#minhafoto").mouseleave(function() {
+            $(this).removeClass("foto_com_mouse");
+            $(this).addClass("foto_sem_mouse");
+        });
+
+
+    });
+</script>
 </body>
 
 </html>

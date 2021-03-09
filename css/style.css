@@ -152,3 +152,45 @@ a:hover {
     font-size: 15px;
     text-align: justify;
 }
+
+#minhafoto {
+    position: absolute;
+}
+
+.foto_com_mouse {
+    width: 220px;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.foto_sem_mouse {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#acender, #escuro {
+    cursor: pointer;
+}
+
+.escurosemefeito {
+    background-color: rgb(53, 21, 37);
+    color: #fff;
+}
+
+.clarosemefeito {
+    background-color: #fff;
+    color: #333;
+}
+
+.escuro {
+    background-color: rgb(53, 21, 37);
+    color: #fff;
+    transition: 0.7s;
+}
+
+.claro {
+    background-color: #fff;
+    color: #333;
+    transition: 0.7s;
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Thiago Inocêncio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Thiago Inocêncio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+          aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Currículo</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publicações</a></li>
+            <li class="nav-item active"><a class="nav-link" href="projects.html">Projetos</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <!--==========================
+              Menu
+            ============================-->
+          <div id="side_menu">
+            <div class="menu_header">
+              Menu
+            </div>
+            <ul class="menu_list">
+              <li class="list-item"><a href="index.html">Sobre</a></li>
+              <!-- <li class="list-item"><a href="cv.html">Currículo</a></li> -->
+              <li class="list-item"><a href="publications.html">Publicações</a></li>
+              <li class="list-item list-item-selected"><a href="projects.html">Projetos</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-10 content">
+          <h1 class="page-title">Projetos</h1>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="card">
+                <img src="images/projects/gerar_cv_project.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://gerarcurriculo.com/" target="_blank">Gerar Currículo</a></h5>
+                  <p class="card-text">Website para geração de currículos formatados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Thiago Inocêncio</span>
+    </div>
+  </footer> -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+        var template = window.localStorage.getItem("template");
+
+        if(template) {
+          $("body").addClass(template);
+        }
+
+        // Jquery entra aqui
+        
+        $("#acender").click(function() {
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+            window.localStorage.setItem('template', 'claro');
+        });
+
+        $("#escuro").click(function() {
+            $("body").addClass("escuro");
+            $("body").removeClass("claro");
+            window.localStorage.setItem('template', 'escuro');
+        })
+
+        $("#minhafoto").mouseenter(function() {
+            $(this).addClass("foto_com_mouse");
+            $(this).removeClass("foto_sem_mouse");
+        });
+
+        $("#minhafoto").mouseleave(function() {
+            $(this).removeClass("foto_com_mouse");
+            $(this).addClass("foto_sem_mouse");
+        });
+
+
+    });
+</script>
+</body>
+
+</html>
