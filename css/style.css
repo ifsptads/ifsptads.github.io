@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+main > .container {
+    padding: 35px 15px 0;
+  }
+  
+  .footer {
+    background-color: #f5f5f5;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+
+
+/*--------------------------------------------------------------
+ # index.html
+ --------------------------------------------------------------*/  
+ .social_links {
+     margin-bottom: 20px;
+ }
+
+
+/*--------------------------------------------------------------
+ # Menu
+ --------------------------------------------------------------*/
+#side_menu {
+}
+.menu_header {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.menu_list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.list-item {
+    border: none;
+    margin-bottom: 4px;
+}
+
+.list-item a {
+    color: #000;
+}
+
+.list-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list-item-selected {
+    font-weight: bold;
+}
+
+
+.page-title {
+    border-bottom: 1px solid #b9b9b940;
+    padding-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile_container {
+        text-align: center;
+    }
+    .profile_container img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 991px) {
+     #side_menu {
+         display: none;
+     }   
+     .content {
+        margin-left: 0px;
+    }
+    #about_text {
+        margin-top: 20px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .content {
+        margin-left: -60px;
+    }
+    #navbarsExample07 {
+        display: none !important;
+    }
+    #about_text {
+       margin-left: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #about_text {
+        margin-left: -15px;
+     }
+}
+
+
+
+.card-title a {
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+#about_text {
+
+}
+
+
+/* ==========================
+   Publications
+   ========================== */
+#publications a {
+    color: #000;
+}
+#publications a:hover {
+}
+#publications p {
+    font-size: 15px;
+    text-align: justify;
+}

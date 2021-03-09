@@ -1,189 +1,164 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<!doctype html>
+<html lang="en" class="h-100">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Thiago de Jesus Inocêncio">
+  <title>Thiago Inocêncio</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136939826-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        gtag('config', 'UA-136939826-1');
-    </script>
-
-    <title>Thiago Inocêncio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página pessoal de Thiago Inocêncio">
-    <meta name="author" content="Thiago Inocêncio">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic ' rel='stylesheet'
-        type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700 ' rel='styleshet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css" />
+  <link rel="shortcut icon" href="favicon.ico">
 
 
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="index">
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container">
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.jpg" width="190" heigth="200"
-                alt="Thiago Inocêncio" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Thiago Inocêncio</h1>
-                <h2 class="desc">Passionate for innovation and computer science</h2>
-                <ul class="social list-inline">
-                    <li><a href="https://twitter.com/ThiagoInocenci0" target="_blank"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/thiago-inocencio" target="_blank"><i
-                                class="fa fa-linkedin"></i></a></li>
-                    <!--<li><a href="https://stackoverflow.com/users/8229269"><i class="fa fa-stack-overflow"></i></a></li>-->
-                    <li><a href="https://github.com/ThiagoInocencio" target="_blank"><i class="fa fa-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <!--//profile-->
-            <!--<a class="btn btn-cta-primary pull-right" href="" target="_blank"><i class="fa fa-paper-plane"></i> Download Resume</a>-->
+<body class="d-flex flex-column h-100">
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Thiago Inocêncio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+          aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Sobre</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="cv.html">Currículo</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="publications.html">Publicações</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projetos</a></li>
+          </ul>
         </div>
-        <!--//container-->
-    </header>
-    <!--//header-->
 
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-md-12 col-sm-12 col-xs-12">
+      </div>
+    </nav>
+  </header>
 
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">Sobre</h2>
-                        <div class="content">
-                            <p>Sou um profissional dedicado com experiência em desenvolvimento de software. Já trabalhei
-                                em projetos que usavam Java (JSF, JSP, RESTful API), PHP (Laravel Framework), C #,
-                                Asp.net MVC, VBA, MS Office, Javascript, tecnologias da Web e frameworks como HTML5,
-                                CSS3, Bootstrap e Jquery. Atualmente, trabalho em projetos que usam o Asp.net MVC,
-                                AngularJS, CSS3, HTML5, Bootstrap e Jquery. Também estou envolvido com pesquisa em
-                                ciência da computação na Universidade Federal do ABC (UFABC) com vias de interesse em
-                                Sistemas de Sistemas (SoS), Modelagem de Processos de Negócio (BPMN), Engenharia de
-                                Software, Arquitetura Orientada a Serviços, Microservices, Cidades Inteligentes e
-                                Internet das Coisas.</p>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <!--==========================
+              Menu
+            ============================-->
+          <div id="side_menu">
+            <div class="menu_header">
+              Menu
             </div>
-
-            <div class="secondary col-md-12 col-sm-12 col-xs-12">
-
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Formação Acadêmica</h2>
-                        <div class="content">
-                            <div class="item">
-                                <i class="fa fa-graduation-cap"></i> Mestrado em Ciências da Computação na <a
-                                    href="http://www.ufabc.edu.br/" target="_blank"> Universidade Federal do ABC
-                                </a><span class="year">(Agosto 2018 - atualmente)</span></h4>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <i class="fa fa-graduation-cap"></i> Graduação em Análise e Desenvolvimento de Sistemas
-                                no <a href="https://www.ifsp.edu.br/" target="_blank">Instituto Federal de São Paulo
-                                </a><span class="year">(Fevereiro 2015 - Dezembro 2017)</span></h4>
-                            </div>
-                            <!--//item-->
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Experiência Profissional</h2>
-                        <div class="content">
-                            <div class="item">
-                                <i class="fa fa-group"></i> Developer<a href="https://www.ocatec.com.br/"
-                                    target="_blank"> Ocatec </a><span class="year">(Agosto 2018 - atualmente)</span>
-                                </h4>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <i class="fa fa-group"></i> Developer<a href="https://www.boinalinha.com/"
-                                    target="_blank">Boi na Linha </a> <span class="year">(Fevereiro 2018 - Maio
-                                    2018)</span></h4>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <i class="fa fa-group"></i> Estagiário de desenvolvimento de software<a
-                                    href="https://www.ifsp.edu.br/" target="_blank"> Instituto Federal de São Paulo </a>
-                                <span class="year">(Março 2017 - Dezembro 2017)</span></h4>
-                            </div>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-
-
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Projetos</h2>
-                        <div class="content">
-                            <p>Projetos abertos - <a href="https://github.com/ThiagoInocencio"
-                                    target="_blank">https://github.com/ThiagoInocencio</a></p>
-                            <p><a href="http://gerarcurriculo.com" target="_blank">2018 - Gerar Currículo Website para
-                                    criação de currículos profissionais.</a> </p>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-            </div>
+            <ul class="menu_list">
+              <li class="list-item list-item-selected"><a href="index.html">Sobre</a></li>
+              <!-- <li class="list-item"><a href="cv.html">Currículo</a></li> -->
+              <li class="list-item"><a href="publications.html">Publicações</a></li>
+              <li class="list-item"><a href="projects.html">Projetos</a></li>
+            </ul>
+          </div>
         </div>
-        <!--//row-->
+        <div class="col-md-12 col-lg-10 content">
+          <h1 class="page-title">Thiago Inocêncio</h1>
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-12 col-lg-3 profile_container">
+              <img src="images/profile.jpg" width="200" height="200">
+            </div>
+            <div class="col-md-12 col-lg-9">
+              <p id="about_text">
+                Graduado em Tecnologia em Análise e Desenvolvimento de Sistemas pelo Instituto Federal
+                de Educação,
+                Ciências e Tecnologia de São Paulo (IFSP). Atualmente é mestrando em Ciência da Computação na
+                Universidade
+                Federal do ABC (UFABC). Tem experiência na área de Ciência da Computação, com ênfase em análise e
+                desenvolvimento de sistemas, atuando principalmente nos seguintes temas: Engenharia de software,
+                Sistema-de-sistemas, internet das coisas, microserviços etc.</p>
+            </div>
+          </div>
+
+          <div class="social_links">
+
+            <a href="https://github.com/ThiagoInocencio" target="_blank" style="margin-left: -8px;">
+              <img src="images/icons/github.png" width="50" height="50" alt="Github" title="Github" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/thiago-inocencio/" target="_blank" style="margin-left: 10px;">
+              <img src="images/icons/linkedin.png" width="40" height="40" alt="Linkedin" title="Linkedin" />
+            </a>
+
+            <a href="http://lattes.cnpq.br/3293916846335475" target="_blank" style="margin-left: 15px;">
+              <img src="images/icons/lattes.png" width="40" height="40" alt="Currículo Lattes"
+                title="Currículo Lattes" />
+            </a>
+
+            <a target="_blank" href="https://www.researchgate.net/profile/Thiago_Inocencio" style="margin-left: 15px;">
+              <img src="images/icons/rg.png" width="40" height="40" alt="Research Gate" title="Research Gate" />
+            </a>
+
+            <a target="_blank" href="https://scholar.google.com.br/citations?user=bkZQWeUAAAAJ"
+              style="margin-left: 15px;">
+              <img src="images/icons/g-scholar.png" width="40" height="40" alt="Google Scholar"
+                title="Google Scholar" />
+            </a>
+
+          </div>
+
+          <h2>Principais interesses de pesquisa</h2>
+          <p>A seguir listo meus principais interesses de pesquisa:
+            <ul>
+              <li>Arquitetura e Engenharia de <a href="https://en.wikipedia.org/wiki/System_of_systems"
+                  target="_blank">Sistemas-de-sistemas</a>;</li>
+              <li>Modelagem de processos de negócios</li>
+              <li>Engenharia e arquitetura de Software;</li>
+              <li>Arquitetura baseada em microserviços;</li>
+              <li>Cidades inteligentes;</li>
+              <li>Internet das Coisas.</li>
+            </ul>
+
+            <h2>Contato</h2>
+            <p>M.Sc student in Computer Science | Center for Mathematics, Computation and Cognition (CMCC) Federal
+              University of ABC (UFABC)
+              Avenida dos Estados, 5001, Santo André/SP, Brazil
+              lattes:
+              http://lattes.cnpq.br/3293916846335475
+              linkedin: https://www.linkedin.com/in/thiago-inocencio/</p>
+            <h5><b>E-mail</b></h5>
+            <p>thiago.inocencio (at) ufabc.edu.br</p>
+        </div>
+
+      </div>
     </div>
-    <!--//masonry-->
 
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+  </main>
+  <!-- 
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Thiago Inocêncio</span>
+    </div>
+  </footer> -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
